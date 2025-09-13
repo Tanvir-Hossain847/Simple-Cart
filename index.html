@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="max-w-full hero bg-cover bg-no-repeat h-[80vh] grid items-center">
@@ -17,20 +18,21 @@
       <p class="py-6 text-white secondery">
         A simple online shop that consists of some very interesting items. Here you can find excelent goods. Uniqe items that you won't find anywhere else. So, shop now to and make your heart happy.
       </p>
-      <button class="primary text-white  bg-emerald-700 border-none px-10 rounded-xl cursor-pointer hover:bg-emerald-800 transition-[.5s] py-3">Get Started</button>
+      <a href="#cartSection"><button class="primary text-white bg-emerald-700 border-none px-10 rounded-xl cursor-pointer hover:bg-emerald-800 transition-[.5s] py-3">Get Started</button></a>
     </div>
   </div>
 </div>
     </div>
 
 
-    <section class="cart-section">
-        <h1 class="text-center primary text-white text-4xl pt-30">Items Sections</h1>
-        <div class="mt-20 flex justify-center w-full gap-8 h-[150vh] pb-20">
+    <section id="cartSection" class="cart-section py-10">
+        <h1 class="text-center primary text-emerald-950 w-11/12 mx-auto rounded-xl py-2 border-emerald-600 border-b-3 text-4xl bg-white">Items Sections</h1>
+        <div class="mt-20 flex justify-center w-full gap-8 h-[162vh] pb-20">
         <div class="grid grid-cols-3 gap-18 mb-16 h-full">
             <div class="card bg-emerald-950 backdrop-blur-sm border-1 border-white w-96 shadow-sm">
   <figure class="px-10 pt-10">
     <img
+    onclick="my_modal_5.showModal()"
       src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
       alt="Shoes"
       class="rounded-xl" />
@@ -39,6 +41,41 @@
     <h2 class="card-title text-white">Card Title</h2>
     <p class="text-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div class="w-full">
+          <h1 class="text-2xl secondery text-white">100$</h1>
+      <button onclick="dynamic()" class="btn bg-white text-emerald-950 w-full mt-3">Buy Now</button>
+    </div>
+  </div>
+</div>
+            <div class="card bg-emerald-950 backdrop-blur-sm border-1 border-white w-96 shadow-sm">
+  <figure class="px-10 pt-10">
+    <img
+    onclick="my_modal_5.showModal()"
+      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+      alt="Shoes"
+      class="rounded-xl" />
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title text-white">Card Title</h2>
+    <p class="text-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+    <div class="w-full">
+      <h1 class="text-2xl secondery text-white">100$</h1>
+      <button onclick="dynamic()" class="btn bg-white text-emerald-950 w-full mt-3">Buy Now</button>
+    </div>
+  </div>
+</div>
+            <div class="card bg-emerald-950 backdrop-blur-sm border-1 border-white w-96 shadow-sm">
+  <figure class="px-10 pt-10">
+    <img
+    onclick="my_modal_5.showModal()"
+      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+      alt="Shoes"
+      class="rounded-xl" />
+  </figure>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title text-white">Card Title</h2>
+    <p class="text-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+    <div class="w-full">
+      <h1 class="text-2xl secondery text-white">100$</h1>
       <button onclick="addToCart()" class="btn bg-white text-emerald-950 w-full mt-3">Buy Now</button>
     </div>
   </div>
@@ -46,6 +83,7 @@
             <div class="card bg-emerald-950 backdrop-blur-sm border-1 border-white w-96 shadow-sm">
   <figure class="px-10 pt-10">
     <img
+    onclick="my_modal_5.showModal()"
       src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
       alt="Shoes"
       class="rounded-xl" />
@@ -54,6 +92,7 @@
     <h2 class="card-title text-white">Card Title</h2>
     <p class="text-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div class="w-full">
+      <h1 class="text-2xl secondery text-white">100$</h1>
       <button onclick="addToCart()" class="btn bg-white text-emerald-950 w-full mt-3">Buy Now</button>
     </div>
   </div>
@@ -61,6 +100,7 @@
             <div class="card bg-emerald-950 backdrop-blur-sm border-1 border-white w-96 shadow-sm">
   <figure class="px-10 pt-10">
     <img
+    onclick="my_modal_5.showModal()"
       src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
       alt="Shoes"
       class="rounded-xl" />
@@ -69,6 +109,7 @@
     <h2 class="card-title text-white">Card Title</h2>
     <p class="text-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div class="w-full">
+      <h1 class="text-2xl secondery text-white">100$</h1>
       <button onclick="addToCart()" class="btn bg-white text-emerald-950 w-full mt-3">Buy Now</button>
     </div>
   </div>
@@ -76,6 +117,7 @@
             <div class="card bg-emerald-950 backdrop-blur-sm border-1 border-white w-96 shadow-sm">
   <figure class="px-10 pt-10">
     <img
+    onclick="my_modal_5.showModal()"
       src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
       alt="Shoes"
       class="rounded-xl" />
@@ -84,6 +126,7 @@
     <h2 class="card-title text-white">Card Title</h2>
     <p class="text-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div class="w-full">
+      <h1 class="text-2xl secondery text-white">100$</h1>
       <button onclick="addToCart()" class="btn bg-white text-emerald-950 w-full mt-3">Buy Now</button>
     </div>
   </div>
@@ -91,6 +134,7 @@
             <div class="card bg-emerald-950 backdrop-blur-sm border-1 border-white w-96 shadow-sm">
   <figure class="px-10 pt-10">
     <img
+    onclick="my_modal_5.showModal()"
       src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
       alt="Shoes"
       class="rounded-xl" />
@@ -99,6 +143,7 @@
     <h2 class="card-title text-white">Card Title</h2>
     <p class="text-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div class="w-full">
+      <h1 class="text-2xl secondery text-white">100$</h1>
       <button onclick="addToCart()" class="btn bg-white text-emerald-950 w-full mt-3">Buy Now</button>
     </div>
   </div>
@@ -106,6 +151,7 @@
             <div class="card bg-emerald-950 backdrop-blur-sm border-1 border-white w-96 shadow-sm">
   <figure class="px-10 pt-10">
     <img
+    onclick="my_modal_5.showModal()"
       src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
       alt="Shoes"
       class="rounded-xl" />
@@ -114,6 +160,7 @@
     <h2 class="card-title text-white">Card Title</h2>
     <p class="text-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div class="w-full">
+      <h1 class="text-2xl secondery text-white">100$</h1>
       <button onclick="addToCart()" class="btn bg-white text-emerald-950 w-full mt-3">Buy Now</button>
     </div>
   </div>
@@ -121,6 +168,7 @@
             <div class="card bg-emerald-950 backdrop-blur-sm border-1 border-white w-96 shadow-sm">
   <figure class="px-10 pt-10">
     <img
+      onclick="my_modal_5.showModal()"
       src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
       alt="Shoes"
       class="rounded-xl" />
@@ -129,41 +177,24 @@
     <h2 class="card-title text-white">Card Title</h2>
     <p class="text-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div class="w-full">
+      <h1 class="text-2xl secondery text-white">100$</h1>
       <button onclick="addToCart()" class="btn bg-white text-emerald-950 w-full mt-3">Buy Now</button>
     </div>
   </div>
 </div>
-            <div class="card bg-emerald-950 backdrop-blur-sm border-1 border-white w-96 shadow-sm">
-  <figure class="px-10 pt-10">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes"
-      class="rounded-xl" />
-  </figure>
-  <div class="card-body items-center text-center">
-    <h2 class="card-title text-white">Card Title</h2>
-    <p class="text-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="w-full">
-      <button onclick="addToCart()" class="btn bg-white text-emerald-950 w-full mt-3">Buy Now</button>
+           <!-- Open the modal using ID.showModal() method -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
     </div>
   </div>
-</div>
-            <div class="card bg-emerald-950 backdrop-blur-sm border-1 border-white w-96 shadow-sm">
-  <figure class="px-10 pt-10">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-      alt="Shoes"
-      class="rounded-xl" />
-  </figure>
-  <div class="card-body items-center text-center">
-    <h2 class="card-title text-white">Card Title</h2>
-    <p class="text-white">A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="w-full">
-      <button onclick="addToCart()" class="btn bg-white text-emerald-950 w-full mt-3">Buy Now</button>
-    </div>
-  </div>
-</div>
-           
+</dialog>
             
            
   </div>
